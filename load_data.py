@@ -1,10 +1,3 @@
-"""Step 1: Load the Olist CSV files into a SQLite database (olist.db).
-
-How to use:
-1. Download the Olist dataset from Kaggle and unzip it.
-2. Put all the CSV files inside a folder called "data" next to this script.
-3. Run:  python load_data.py
-"""
 
 import sqlite3
 from pathlib import Path
@@ -14,7 +7,7 @@ import pandas as pd
 DATA_DIR = Path("data")
 DB_PATH = Path("olist.db")
 
-# CSV file name -> table name
+
 FILES = {
     "olist_customers_dataset.csv": "customers",
     "olist_orders_dataset.csv": "orders",
@@ -26,7 +19,7 @@ FILES = {
     "product_category_name_translation.csv": "category_translation",
 }
 
-# Indexes speed up the JOINs used in queries.sql
+
 INDEXES = [
     "CREATE INDEX IF NOT EXISTS idx_orders_id ON orders(order_id)",
     "CREATE INDEX IF NOT EXISTS idx_orders_cust ON orders(customer_id)",

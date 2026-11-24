@@ -1,8 +1,4 @@
-"""Step 1b: Run every query in queries.sql and print the results.
 
-Run:  python run_queries.py
-Results are also saved to the results/ folder as CSV files for your README and charts.
-"""
 
 import sqlite3
 from pathlib import Path

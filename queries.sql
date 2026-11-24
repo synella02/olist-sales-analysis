@@ -1,5 +1,4 @@
--- Olist E-Commerce Analysis: first 5 business questions (SQLite)
--- Run these in DB Browser for SQLite, or from Python with pandas.read_sql_query.
+
 
 -- Q1. Is monthly revenue growing?
 SELECT
